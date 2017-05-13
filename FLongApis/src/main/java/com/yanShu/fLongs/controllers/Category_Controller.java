@@ -16,9 +16,15 @@ import com.yanShu.fLongs.services.Icategory_Service;
 @Controller
 public class Category_Controller {
 
+	/**
+	 *类目查询的业务层接口 
+	 */
 	@Autowired
 	private Icategory_Service _category_service;
 	
+	/**
+	 *使用ID查询
+	 */
 	@ResponseBody
 	@RequestMapping("/findById")
 	public String findById(HttpServletRequest request) {
@@ -29,6 +35,9 @@ public class Category_Controller {
 		return categoryJson;
 	}
 
+	/**
+	 *使用类目名称查询
+	 */
 	@ResponseBody
 	@RequestMapping("/findByName")
 	public String findByName(HttpServletRequest request) {
@@ -39,6 +48,9 @@ public class Category_Controller {
 		return categoryJson;
 	}
 
+	/**
+	 *查询属于几级类目
+	 */
 	@ResponseBody
 	@RequestMapping("/findByType")
 	public String findByType(HttpServletRequest request) {
@@ -49,6 +61,9 @@ public class Category_Controller {
 		return categoryJson;
 	}
 
+	/**
+	 *使用类目在淘宝上的ID查询
+	 */
 	@ResponseBody
 	@RequestMapping("/findByLeafId")
 	public String findByLeafId(HttpServletRequest request) {
@@ -59,6 +74,9 @@ public class Category_Controller {
 		return categoryJson;
 	}
 
+	/**
+	 *根据类目节点取
+	 */
 	@ResponseBody
 	@RequestMapping("/findByLevelNode")
 	public String findByLevelNode(HttpServletRequest request) {
