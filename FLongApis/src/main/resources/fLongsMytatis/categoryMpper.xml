@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yanShu.fLongs.mappers.Icategory_Mapper">
+
+	<!-- 查询ID编号 -->
+	<select id="findById" resultType="CategoryEntity"
+		parameterType="Integer">
+		select * from categorys
+		<where>
+			<if test="id != null">
+				id =#{id}
+			</if>
+		</where>
+	</select>
+	
+	<!-- 类目名称查询 -->
+	<select id="findByName" resultType="CategoryEntity"
+		parameterType="String">
+		select * from categorys
+		<where>
+			<if test="categoryName != null">
+				categoryName =#{categoryName}
+			</if>
+		</where>
+	</select>
+	
+	<!-- 根据类型查询，类目的级别 -->
+	<select id="findByType" resultType="CategoryEntity"
+		parameterType="String">
+		select * from categorys
+		<where>
+			<if test="categoryType != null">
+				categoryType =#{categoryType}
+			</if>
+		</where>
+	</select>
+	
+	<!-- 根据类型查询，类目的级别 -->
+	<select id="findByLeafId" resultType="CategoryEntity"
+		parameterType="String">
+		select * from categorys
+		<where>
+			<if test="leafId != null">
+				leafId =#{leafId}
+			</if>
+		</where>
+	</select>
+	
+	<!-- 根据类型查询，类目的级别 -->
+	<select id="findByLevelNode" resultType="CategoryEntity"
+		parameterType="String">
+		select * from categorys
+		<where>
+			<if test="levelNode != null">
+				levelNode =#{levelNode}
+			</if>
+		</where>
+	</select>
+</mapper>
