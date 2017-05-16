@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>塔尖词</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/category.css">
+    <script src="js/jquery-1.8.3.js"></script>
+    
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="content_wrap">
+        <div class="content_left">
+            <div class="top_set"></div>
+            <div class="first_class _class">
+                <p class="cla_name">一级类目</p>
+                <select id="levelA">
+                   
+                </select>
+            </div>
+            <div class="second_class _class">
+                <p class="cla_name">二级类目</p>
+                <select id="levelB">
+                   
+                </select>
+            </div>
+            <div class="third_class _class">
+                <p class="cla_name" >三级类目</p>
+                <select id="levelC">
+                   
+                </select>
+            </div>
+            <div class="word_classify _class">
+                <p class="cla_name">关键词类型</p>
+                <div class="radio_box">
+                    <label><input type="radio" name="word" checked>搜索热门</label>
+                    <label><input type="radio" name="word">搜索上升</label>
+                </div>
+            </div>
+            <div class="asy_btn btn">开始分析</div>
+            <div class="return_left">
+                <div class="r_left"></div>
+            </div>
+        </div>
+        <div class="content_right fr">
+            <div class="top_set"></div>
+            <div class="right_btn_box">
+                <div class="output_btn btn" id="inputExcel">导出表格</div>
+            </div>
+            <div class="table_box">
+                <table id="topKeyword">
+                    <thead>
+                        <tr>
+                            <th>排名
+                                <div>
+                                    <div class="th_top"></div>
+                                    <div class="th_bot"></div>
+                                </div>
+                            </th>
+                            <th>关键词
+                                <div>
+                                    <div class="th_top"></div>
+                                    <div class="th_bot"></div>
+                                </div>
+                            </th>
+                            <th>关注指数
+                                <div>
+                                    <div class="th_top"></div>
+                                    <div class="th_bot"></div>
+                                </div>
+                            </th>
+                            <th>关注对比
+                                <div>
+                                    <div class="th_top"></div>
+                                    <div class="th_bot"></div>
+                                </div>
+                            </th>
+                            <th>升降为次
+                                <div>
+                                    <div class="th_top"></div>
+                                    <div class="th_bot"></div>
+                                </div>
+                            </th>
+                            <th>升降幅度
+                                <div>
+                                    <div class="th_top"></div>
+                                    <div class="th_bot"></div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>30%</p>
+                                </div>
+                            </td>
+                            <td style="color:#80c269;">
+                                <div class="up_down"><img src="img/down.png"></div>
+                                55
+                            </td>
+                            <td style="color:#80c269;">
+                                <div class="up_down"><img src="img/down.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>50%</p>
+                                </div>
+                            </td>
+                            <td style="color:#80c269;">
+                                <div class="up_down"><img src="img/down.png"></div>
+                                55
+                            </td>
+                            <td style="color:#80c269;">
+                                <div class="up_down"><img src="img/down.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>2%</p>
+                                </div>
+                            </td>
+                            <td style="color:#80c269;">
+                                <div class="up_down"><img src="img/down.png"></div>
+                                55
+                            </td>
+                            <td style="color:#80c269;">
+                                <div class="up_down"><img src="img/down.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>1%</p>
+                                </div>
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                55
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>36%</p>
+                                </div>
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                55
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>44%</p>
+                                </div>
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                55
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>88%</p>
+                                </div>
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                55
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><a href="search.html">22</a></td>
+                            <td>33</td>
+                            <td class="ss">
+                                <div class="schedule">
+                                    <p>46%</p>
+                                </div>
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                55
+                            </td>
+                            <td style="color:#FE8335;">
+                                <div class="up_down"><img src="img/up.png"></div>
+                                66%
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/category.js"></script>
+<script src="js/jquery.table2excel.js"></script>
+</html>
