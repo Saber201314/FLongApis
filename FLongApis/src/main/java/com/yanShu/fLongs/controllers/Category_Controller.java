@@ -17,18 +17,20 @@ import com.yanShu.fLongs.services.Icategory_Service;
 public class Category_Controller {
 
 	/**
-	 *ÀàÄ¿²éÑ¯µÄÒµÎñ²ã½Ó¿Ú 
+	 *ç±»ç›®æŸ¥è¯¢çš„ä¸šåŠ¡å±‚æ¥å£ 
 	 */
 	@Autowired
 	private Icategory_Service _category_service;
 	
 	/**
-	 *Ê¹ÓÃID²éÑ¯
+	 * 
+	 *ä½¿ç”¨IDæŸ¥è¯¢
 	 */
 	@ResponseBody
 	@RequestMapping("/findById")
 	public String findById(HttpServletRequest request) {
 		// TODO Auto-generated method stub
+		
 		Integer id = Integer.parseInt(request.getParameter("id"));
 		List<CategoryEntity> categorys = _category_service.findById(id);
 		String categoryJson = JSON.toJSONString(categorys);
@@ -36,7 +38,7 @@ public class Category_Controller {
 	}
 
 	/**
-	 *Ê¹ÓÃÀàÄ¿Ãû³Æ²éÑ¯
+	 *ä½¿ç”¨ç±»ç›®åç§°æŸ¥è¯¢
 	 */
 	@ResponseBody
 	@RequestMapping("/findByName")
@@ -49,7 +51,7 @@ public class Category_Controller {
 	}
 
 	/**
-	 *²éÑ¯ÊôÓÚ¼¸¼¶ÀàÄ¿
+	 *æŸ¥è¯¢å±äºå‡ çº§ç±»ç›®
 	 */
 	@ResponseBody
 	@RequestMapping("/findByType")
@@ -62,7 +64,7 @@ public class Category_Controller {
 	}
 
 	/**
-	 *Ê¹ÓÃÀàÄ¿ÔÚÌÔ±¦ÉÏµÄID²éÑ¯
+	 *ä½¿ç”¨ç±»ç›®åœ¨æ·˜å®ä¸Šçš„IDæŸ¥è¯¢
 	 */
 	@ResponseBody
 	@RequestMapping("/findByLeafId")
@@ -75,7 +77,7 @@ public class Category_Controller {
 	}
 
 	/**
-	 *¸ù¾İÀàÄ¿½ÚµãÈ¡
+	 *æ ¹æ®ç±»ç›®èŠ‚ç‚¹å–
 	 */
 	@ResponseBody
 	@RequestMapping("/findByLevelNode")

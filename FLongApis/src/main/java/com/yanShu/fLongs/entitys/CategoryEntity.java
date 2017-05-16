@@ -1,37 +1,37 @@
 package com.yanShu.fLongs.entitys;
 
 /*
- * TopîÄ¿ÊµÌåÀà
+ * Topé¡ç›®å®ä½“ç±»
  */
 public class CategoryEntity {
 
 	/**
-	 * ±àºÅID
+	 * ç¼–å·ID
 	 */
 	private Integer id;
 	
 	/**
-	 * ÀàÄ¿Ãû³Æ
+	 * ç±»ç›®åç§°
 	 */
 	private String categoryName;
 	
 	/**
-	 * ÀàÄ¿ÀàĞÍ£¬Ò»¼¶»ò¶ş¼¶ÀàÄ¿£¬»òÈı¼¶¡¤¡¤¡¤
+	 * ç±»ç›®ç±»å‹ï¼Œä¸€çº§æˆ–äºŒçº§ç±»ç›®ï¼Œæˆ–ä¸‰çº§Â·Â·Â·
 	 */
 	private String categoryType;
 	
 	/**
-	 * ´´½¨Ê±¼ä
+	 * åˆ›å»ºæ—¶é—´
 	 */
 	private String crateDate;
 	
 	/**
-	 * ÀàÄ¿ID
+	 * ç±»ç›®ID
 	 */
 	private String leafId;
 	
 	/**
-	 * ±êÊ¶ÀàÄ¿µÄÉÏ¼¶ÀàÄ¿ID±àºÅ levelNode= ID
+	 * æ ‡è¯†ç±»ç›®çš„ä¸Šçº§ç±»ç›®IDç¼–å· levelNode= ID
 	 */
 	private String levelNode;
 

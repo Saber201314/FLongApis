@@ -5,42 +5,42 @@ import java.util.List;
 import com.yanShu.fLongs.entitys.CategoryEntity;
 
 /**
- * top類目Service
+ * top椤炵洰Service
  * @author Sabers
  *
  */
 public interface Icategory_Service {
 
 	/**
-	 * 查询ID编号
+	 * 鏌ヨID缂栧彿
 	 * @param id 
-	 * @return 类目集合
+	 * @return 绫荤洰闆嗗悎
 	 */
 	public List<CategoryEntity>findById(Integer id);
 	
 	/**
-	 * 类目名称查询
+	 * 绫荤洰鍚嶇О鏌ヨ
 	 * @param name 
-	 * @return 类目集合
+	 * @return 绫荤洰闆嗗悎
 	 */
 	public List<CategoryEntity>findByName(String name);
 	
 	/**
-	 * 根据类型查询，类目的级别
+	 * 鏍规嵁绫诲瀷鏌ヨ锛岀被鐩殑绾у埆
 	 * @param categoryType
 	 * @return
 	 */
 	public List<CategoryEntity>findByType(String categoryType);
 	
 	/**
-	 * 根据leafId 查询类目
+	 * 鏍规嵁leafId 鏌ヨ绫荤洰
 	 * @param leafId
 	 * @return
 	 */
 	public List<CategoryEntity>findByLeafId(String leafId);
 	
 	/**
-	 * 根据level查询类目
+	 * 鏍规嵁level鏌ヨ绫荤洰
 	 * @param levelNode
 	 * @return
 	 */

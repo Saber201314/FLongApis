@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.alibaba.fastjson.JSON;
 import com.yanShu.fLongs.entitys.CategoryEntity;
 import com.yanShu.fLongs.services.Icategory_Service;
 
@@ -19,20 +20,14 @@ public class catogerTest{
 	@Autowired
 	private Icategory_Service category_ServiceImpl;
 	
-	/**
-	 * Êä³öÐÅÏ¢
-	 * @param categorys
-	 */
 	private void ShowCategory(List<CategoryEntity> categorys){
-		for (CategoryEntity categoryItem : categorys) {
-			System.out.println(categoryItem.getCategoryName());
-		}
+		System.out.println(JSON.toJSONString(categorys));
 	}
 	
 	@Test
 	public void findById() {
 		// TODO Auto-generated method stub
-		Integer id = 1;
+		Integer id = 16;
 		List<CategoryEntity> categorys = category_ServiceImpl.findById(id);
 		ShowCategory(categorys);
 	}
@@ -40,7 +35,7 @@ public class catogerTest{
 	@Test
 	public void findByName() {
 		// TODO Auto-generated method stub
-		String name ="·þÊÎ";
+		String name ="ï¿½ï¿½ï¿½ï¿½";
 		List<CategoryEntity> categorys = category_ServiceImpl.findByName(name);
 		ShowCategory(categorys);
 	}
